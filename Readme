@@ -1,1 +1,4 @@
 Por favor leer archivo Readme.pdf y enunciado.pdf adjuntos. Para generar el war se recomienda eliminar los archivos pdf del directorio.
+
+Si tiene problemas para correr el proyecto con este error: Maven invalid LOC header (bad signature)
+puede haber una libreria corrupa. Para solucionarlo eliminela y vuelva a correr clean install.
