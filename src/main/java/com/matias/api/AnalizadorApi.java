@@ -58,4 +58,11 @@ public class AnalizadorApi {
 		return ResponseEntity.ok(estadistica);
 	}
 	
+	// Es para chequear el estado con el balanceador
+	@GET
+	@RequestMapping(value = "/status")
+	public boolean ping() {
+		return true;
+	}
+	
 }

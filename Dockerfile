@@ -2,6 +2,7 @@ FROM maven
 
 MAINTAINER Matias Garcia Marset
 
+ADD https://api.github.com/repos/matiasgarciamarset/MLrequest/compare/master...HEAD /dev/null
 RUN mkdir /project \
 	&&  cd /project \
 	&&  git clone https://github.com/matiasgarciamarset/MLRequest.git \
