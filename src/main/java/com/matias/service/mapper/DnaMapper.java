@@ -31,7 +31,7 @@ public class DnaMapper {
 		return obj;
 	}
 	
-	private String aplanar(String[] lista) {
+	public String aplanar(String[] lista) {
 		if (lista.length == 0) {
 			return "";
 		} else if (lista.length == 1) {
@@ -41,6 +41,7 @@ public class DnaMapper {
 		for (String palabra : lista) {
 			buffer.append(palabra).append(",");
 		}
-		return buffer.substring(0, buffer.length()-2).toString();
+		
+		return buffer.substring(0, buffer.length()-1).toString();
 	}
 }

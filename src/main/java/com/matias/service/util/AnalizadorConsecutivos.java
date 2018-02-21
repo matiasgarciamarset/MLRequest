@@ -20,6 +20,10 @@ public class AnalizadorConsecutivos {
 		matrizAcumuladora = new Acumulado[n][n];
 		//Recorro todas las celdas de izq a der y arriba para abajo
 		for (int i = 0; i < n; i++) {
+			//Chequeo matriz cuadrada
+			if (dna[i].length() != n) {
+				return;
+			}
 			for (int j = 0; j < n; j++) {
 				// caso letra nueva
 				if (matrizAcumuladora[i][j] == null) {
